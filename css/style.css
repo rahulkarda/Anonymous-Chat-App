@@ -1,0 +1,111 @@
+body {
+    min-height: 100vh;
+    background-image: linear-gradient(rgb(255, 255, 255), rgb(109, 39, 239));
+}
+
+nav {
+    margin: 2% 0;
+    text-align: center;
+}
+
+.logo {
+    display: block;
+    margin: auto;
+    width: 50px;
+    height: 50px;
+}
+
+.container {
+    max-width: 955px;
+    border: 2px solid black;
+    border-radius: 7px;
+    height: 30vh;
+    padding: 33px;
+    margin: auto;
+    margin-bottom: 1%;
+    overflow-y: auto;
+    min-height: 50vh;
+}
+
+.message {
+    background-color: gainsboro;
+    width: 30%;
+    padding: 12px 20px;
+    margin: 17px 12px;
+    border: 2px solid black;
+    border-radius: 20px;
+}
+
+.left {
+    float: left;
+    clear: both;
+}
+
+.right {
+    float: right;
+    clear: both;
+}
+
+#send-container {
+    display: block;
+    text-align: center;
+    max-width: 985px;
+    width: 100%;
+    margin: auto;
+    margin-bottom: 5%;
+    display: flex;
+    align-items: center;
+}
+
+.btn {
+    cursor: pointer;
+    border: 2px solid black;
+    border-radius: 10px;
+    padding: 15px 30px;
+    font-size: 19px;
+}
+
+#messageInp {
+    width: 85%;
+    border: 2px solid black;
+    border-radius: 6px;
+    height: 34px;
+    padding: 10px 20px;
+    margin: 1%;
+}
+
+.join {
+    float: none;
+    margin: auto;
+    border: none;
+    background-color: rgb(28, 27, 27);
+    color: gray;
+    text-align: center;
+    padding: 2px 5px;
+    margin-top: 15px;
+}
+
+@media screen and (max-width: 900px) {
+    .container {
+        padding: 0;
+        margin-bottom: 3%;
+    }
+
+    form {
+        flex-direction: column;
+    }
+
+    .message {
+        background-color: gainsboro;
+        width: 45%;
+        padding: 7px 12px;
+        margin: 17px 12px;
+        border: 2px solid black;
+        border-radius: 20px;
+        font-size: 15px;
+    }
+
+    .btn {
+        margin-top: 1%;
+    }
+}
