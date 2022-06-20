@@ -36,8 +36,28 @@ const appendCenter = (message, position)=>{
 
 
 // Ask new user for his/her name and let the server know
-const name = prompt("Enter your name to join");
-socket.emit('new-user-joined', name);
+let name = 't';
+if (/Mobi|Android/i.test(navigator.userAgent)) {
+    let input = document.getElementById('name');
+    input.classList.remove('hide');
+    let nameBtn = document.getElementById('nameBtn');
+    nameBtn.classList.remove('hide');
+}else{
+    name = prompt("Enter your username to join");
+    socket.emit('new-user-joined', name);
+}
+
+// Adding a event listener on button to remove it after getting name
+let nameBtn = document.getElementById('nameBtn');
+nameBtn.addEventListener('click', remove);
+
+function remove(){
+    let input = document.getElementById('name');
+    input.classList.add('hide');
+    nameBtn.classList.add('hide');
+    name = document.getElementById('name').value;
+    socket.emit('new-user-joined', name);
+}
 
 // If a new user joins, receive his/her name from the server
 socket.on('user-joined', name =>{
