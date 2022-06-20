@@ -103,6 +103,7 @@ nav {
         border: 2px solid black;
         border-radius: 20px;
         font-size: 15px;
+        margin: 17px auto;
     }
 
     .btn {
@@ -110,20 +111,30 @@ nav {
     }
 }
 
-.hide{
-    display: none;
-}
-
-#nameBtn{
+#nameBtn {
     padding: 7px 20px;
     border-radius: 5px;
     font-size: 15px;
 }
 
-#name{
+#name {
     padding: 10px 20px;
     border: 2px solid black;
     border-radius: 10px;
     margin-top: 4%;
     margin-bottom: 2%;
+}
+
+@media screen and (max-width: 900px) {
+    nav input {
+        display: block;
+    }
+
+    nav button {
+        display: block;
+    }
+}
+
+.hide {
+    display: none;
 }
