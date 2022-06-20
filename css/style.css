@@ -127,11 +127,11 @@ nav {
 
 @media screen and (max-width: 900px) {
     nav input {
-        display: block;
+        display: inline-block;
     }
 
     nav button {
-        display: block;
+        display: inline-block;
     }
 }
 
