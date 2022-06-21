@@ -8,6 +8,7 @@
     "npm": "8.12.1"
   },
   "scripts": {
+    "start": "nodemon index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Rahul",
