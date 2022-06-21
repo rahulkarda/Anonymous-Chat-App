@@ -17,7 +17,7 @@ The user after choosing a username can connect and chat anonymously with multipl
 The site is live at https://anonymous-chat-app.vercel.app/
 
 <a target="_blank" href="https://anonymous-chat-app.vercel.app/">
-          <img src="" width="100%" alt="Chat App"/>
+          <img src="https://github.com/rahulkarda/Anonymous-Chat-App/blob/master/assets/chat.png?raw=true" width="100%" alt="Chat App"/>
 </a>
 <br>
 
