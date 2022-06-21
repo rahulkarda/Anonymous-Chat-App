@@ -3,6 +3,10 @@
   "version": "1.0.0",
   "description": "This is a node server for our iChat messaging app",
   "main": "index.js",
+  "engines": {
+    "node": "16.15.1",
+    "npm": "8.12.1"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
